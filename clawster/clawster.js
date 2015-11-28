@@ -22,19 +22,6 @@ function log( debug, fm ) {
 		};
 }
 
-/**
-var obj={
-	debug:false,
-	saveDir:'./',
-	domain: null,
-	startUrl: '/',
-	strongFilter: null,
-	weakFilter: null,
-	todolist:null,
-	urlHandler:null,
-	maxUrlSize: 120
-};
-*/
 var Clawster = function( obj ) {
 	var obj = obj || {};
 	this.debug = obj.debug || false;
@@ -83,14 +70,4 @@ Clawster.prototype = {
 		self.um.fire();
 	}
 }
-
-var c = new Clawster({
-	debug: true,
-	saveDir:'./m',
-	startUrl: 'http://video.weibo.com/show?fid=1034:ca9a2f993b409c8266b34a61df0e9b1f',
-	strongFilter: null,
-	weakFilter: null,
-	urlHandler:null,
-	maxUrlSize: 120
-});
-c.crawl();
+ module.exports = Clawster;
