@@ -5,4 +5,4 @@
 
 var dns = require('dns');
 
-dns.getServers
+console.log(dns.getServers());
