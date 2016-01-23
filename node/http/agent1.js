@@ -14,12 +14,11 @@ http.get({
 }).on('socket', (socket) => {
 	//remove the socket after used
 	socket.on('data', (data) => {
-		console.log(new Buffer(data).toString());
+		//console.log(new Buffer(data, 'gbk').toString());
 	}).on('end', () => {
 		socket.emit('agentRemove');
 	});
 });
-
 //the same as below:
 //
 //http.get({
