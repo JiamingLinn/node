@@ -1,7 +1,7 @@
 ##网络爬虫，主文件:clawster.js
 ####代码示例
 ```js
-var Clawster = require('./clawster.js);
+var Clawster = require('./clawster');
 
 var c = new Clawster({
 	debug: true,
