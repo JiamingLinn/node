@@ -1,5 +1,6 @@
-网络爬虫，主文件:clawster.js
----------代码示例---------
+##网络爬虫，主文件:clawster.js
+###---------代码示例---------
+```
 var Clawster = require('./clawster.js);
 
 var c = new Clawster({
@@ -12,8 +13,9 @@ var c = new Clawster({
 	maxUrlSize: 120
 });
 c.crawl();
-
---------test.js----------
+```
+###--------test.js----------
+```
 参数：
 	debug:
 	    boolean ，是否开启调试模式
@@ -27,5 +29,5 @@ c.crawl();
 	    RegExp,url轻过滤器。不匹配，不爬取该内容中的url
 	maxUrlSize: 120
 	    int，url长度限制
-
+```
 
